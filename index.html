@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Transactions</title>
+</head>
+<body class="">
+    <nav class="navbar  bg-g">
+        <div class="container-fluid">
+          <a class="navbar-brand  p-2" href="#">
+            <img src="imgs/logo.png" alt="Logo" width="30" height="24" class="animate__animated animate__bounce d-inline-block align-text-top">
+           <span class=" fw-bolder green ">Transactions</span> 
+          </a>
+        </div>
+      </nav>
+      <div class="container my-5 mx-auto row ">
+      <input class="form-control green col m-3" type="text" id="filterName" placeholder="Filter by customer name">
+      <input  class="form-control col m-3" type="number" id="filterAmount" placeholder="Filter by transaction amount">
+      <button id="filterButton" class="col-1 m-3 btn bg-g green ">Filter</button>
+      </div>
+
+    <h3 class="container green">Customers Transactions:</h3>
+
+    <table id="customerTable" class=" table container m-auto text-opacity-50">
+        <thead >
+            <tr >
+                <th class="green" scope="col">Customer Name</th>
+                <th class="green" scope="col">Transaction Date</th>
+                <th class="green" scope="col">Transaction Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically inserted here -->
+        </tbody>
+    </table>
+    <canvas id="transactionChart" width="100" height="50" class="container my-5 col-6"></canvas>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js" ></script>
+</body>
+</html>
